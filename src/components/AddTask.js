@@ -46,7 +46,7 @@ class AddTask extends Component {
       const newTask = {
         title: this.state.input,
         checked: false,
-        id: this.newIndex
+        id: Date.now()
       }
 
       this.props.onClick(newTask);
